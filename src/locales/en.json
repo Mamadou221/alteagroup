@@ -1,0 +1,82 @@
+{
+  "site": {
+    "title": "Altea Group",
+    "tagline": "Elevating your projects to excellence"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "immobilier": "Real Estate",
+    "tourisme": "Tourism",
+    "about": "About",
+    "contact": "Contact",
+    "import_export": "Import / Export"
+  },
+  "services": {
+    "subtitle": "Integrated and reliable solutions for your success.",
+    "immobilier": {
+      "title": "Real Estate",
+      "short": "Complete support: buying, selling, management.",
+      "long": "We support you from A to Z: strategic advisory, secured transactions, optimized rental management, real estate development and co-ownership management. Our team is dedicated to securing your investments and maximizing your asset value."
+    },
+    "construction": {
+      "title": "Construction",
+      "short": "Turnkey projects, strict quality control.",
+      "long": "From design to completion, we handle complete project management, structural works, finishing, and renovations with rigorous oversight and international standards. We guarantee on-time delivery within agreed budgets."
+    },
+    "import_export": {
+      "title": "Import / Export",
+      "short": "Import/export of various goods (vehicles as a priority).",
+      "long": "Specialized in international trade, we facilitate the import/export of vehicles, spare parts, and diverse goods. We manage sourcing, complete logistics, customs clearance, and delivery to final destination."
+    },
+    "agronomie": {
+      "title": "Agronomy & Tourism",
+      "short": "Sustainable agricultural projects, authentic local experiences.",
+      "long": "We develop innovative and sustainable agricultural projects, from technical consulting to commercialization, while also promoting local tourism and cultural exchange. Our approach combines agronomic expertise and local heritage valorization."
+    }
+  },
+  "about": {
+    "title": "About",
+    "lead": "Altea Group is a multidisciplinary group based in Senegal, committed to excellence, transparency, and innovation across all its areas of expertise.",
+    "missionTitle": "Our Mission",
+    "missionText": "To deliver tailored and sustainable solutions in real estate, construction, import/export, and agronomy, while ensuring client satisfaction and success. We are committed to creating long-term value.",
+    "visionTitle": "Our Vision",
+    "visionText": "To become a benchmark player in West Africa through impeccable quality, professional ethics, and proximity with our partners and clients. We aspire to become the trusted partner for all your major projects.",
+    "valuesTitle": "Our Values",
+    "values": [
+      "⭐ Quality",
+      "⭐ Transparency",
+      "⭐ Sustainability",
+      "⭐ Proximity"
+    ],
+    "teamTitle": "Our Team",
+    "teamIntro": "A multidisciplinary, passionate and dedicated team combining local expertise with international standards. Each member brings their expertise to ensure excellence in our services.",
+    "ctaTitle": "Ready to bring your projects to life?",
+    "ctaText": "Contact us today and let's make your ambitions a reality. Our team is here to listen and support you in the success of your projects."
+  },
+  "projects": {
+    "title": "Projects",
+    "lead": "Discover our achievements and ongoing projects that showcase our expertise and commitment to excellence."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's discuss your project together.",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "message": "Your message",
+      "send": "Send message"
+    }
+  },
+  "buttons": {
+    "learn_more": "Learn more →",
+    "show_less": "Show less ↑",
+    "view_more": "View more",
+    "contact_us": "Contact us"
+  },
+  "footer": {
+    "description": "Altea Group is a multidisciplinary group active in construction, real estate, agronomy, and import-export. We support your projects with expertise and professionalism.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us"
+  }
+}

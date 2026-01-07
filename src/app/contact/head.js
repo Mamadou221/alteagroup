@@ -1,0 +1,1 @@
+export const metadata = { title: "Contact — Altea Group", description: "Contact Altea Group" }; export default function Head(){return <></>}
