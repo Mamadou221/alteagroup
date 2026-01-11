@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Altea Group - Site Web Statique
 
-## Getting Started
+Site web professionnel d'Altea Group construit avec HTML, CSS et JavaScript vanilla.
 
-First, run the development server:
+## 🎯 Structure du Projet
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+altea-group/
+├── index.html              # Page d'accueil
+├── about.html              # Page À propos
+├── services.html           # Page Services
+├── projects.html           # Page Projets
+├── contact.html            # Page Contact
+├── immobilier.html         # Page Immobilier
+├── construction.html       # Page Construction
+├── agronomie.html          # Page Agronomie
+├── import-export.html      # Page Import/Export
+├── projet-*.html           # Pages de projets détaillés
+├── css/
+│   └── styles.css          # Styles principaux
+├── js/
+│   ├── app.js              # Application principale (dark mode, animations, slider)
+│   ├── common.js           # Fonctions communes
+│   └── translations.js     # Système de traduction FR/EN
+└── public/
+    ├── favicon.png         # Favicon
+    └── images/             # Images du site
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Démarrage Rapide
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Option 1 : Serveur HTTP Python
+```bash
+python -m http.server 8000
+```
+Puis ouvrez http://localhost:8000
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Option 2 : Serveur HTTP Node.js (avec npx)
+```bash
+npx serve
+```
 
-## Learn More
+### Option 3 : Serveur HTTP PHP
+```bash
+php -S localhost:8000
+```
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Fonctionnalités
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ✅ **Multilingue** : Français / Anglais avec basculement dynamique
+- ✅ **Dark Mode** : Thème clair/sombre avec préférence système
+- ✅ **Responsive** : Adapté mobile, tablette et desktop
+- ✅ **Animations** : Animations au scroll inspirées de cunsa.net
+- ✅ **Slider Hero** : Slider automatique d'images sur la page d'accueil
+- ✅ **Accessibilité** : Navigation clavier, ARIA labels
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🛠️ Technologies
 
-## Deploy on Vercel
+- **HTML5** : Structure sémantique
+- **CSS3** : Styles modernes avec variables CSS
+- **JavaScript Vanilla** : Pas de dépendances externes
+- **Google Fonts** : Police Inter
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Pages Disponibles
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `/` - Page d'accueil avec slider
+- `/about.html` - À propos
+- `/services.html` - Services
+- `/projects.html` - Projets
+- `/contact.html` - Contact
+- `/immobilier.html` - Service Immobilier
+- `/construction.html` - Service Construction
+- `/agronomie.html` - Service Agronomie
+- `/import-export.html` - Service Import/Export
+- `/projet-immobilier.html` - Projet Immobilier
+- `/projet-construction.html` - Projet Construction
+- `/projet-agronomie.html` - Projet Agronomie
+
+## 🎨 Personnalisation
+
+### Modifier les couleurs
+Éditez les variables CSS dans `css/styles.css` :
+```css
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1e40af;
+  /* ... */
+}
+```
+
+### Ajouter une traduction
+Éditez `js/translations.js` pour ajouter de nouvelles clés de traduction.
+
+## 📦 Déploiement
+
+Le site est prêt à être déployé sur n'importe quel hébergeur statique :
+- GitHub Pages
+- Netlify
+- Vercel
+- Surge.sh
+- Serveur web classique (Apache, Nginx)
+
+## 📄 Licence
+
+Propriétaire - Altea Group

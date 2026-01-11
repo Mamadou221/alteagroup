@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Altea Group - Élever vos projets vers l'excellence. Services en immobilier, construction, agronomie et import-export.">
+  <title>Altea Group - Élever vos projets vers l'excellence</title>
+  <link rel="icon" type="image/png" href="/public/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <nav>
+      <a href="/" class="logo" data-translate="site.companyName">Altea Group</a>
+      
+      <ul class="nav-links">
+        <li><a href="/" class="active" data-translate="navbar.home">Accueil</a></li>
+        <li><a href="/services.html" data-translate="navbar.services">Services</a></li>
+        <li><a href="/projects.html" data-translate="navbar.projects">Projets</a></li>
+        <li><a href="/about.html" data-translate="navbar.about">À propos</a></li>
+        <li><a href="/contact.html" data-translate="navbar.contact">Contact</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" data-translate-title="theme.toggleTheme">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+      </div>
+      
+      <button id="menu-toggle" class="menu-toggle" aria-label="Menu" aria-expanded="false" data-translate-title="navbar.menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+    
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+        <ul class="mobile-menu-links">
+          <li><a href="/" data-translate="navbar.home">Accueil</a></li>
+          <li><a href="/services.html" data-translate="navbar.services">Services</a></li>
+          <li><a href="/projects.html" data-translate="navbar.projects">Projets</a></li>
+          <li><a href="/about.html" data-translate="navbar.about">À propos</a></li>
+          <li><a href="/contact.html" data-translate="navbar.contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-actions">
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+          </div>
+          <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="mt-main">
+    <!-- Hero Section Premium avec Slider d'images - Style cunsa.net -->
+    <section class="hero-with-slider" id="hero">
+      <div class="hero-slider-container">
+        <div class="hero-slider-wrapper">
+          <!-- Image 1: Immobilier -->
+          <div class="hero-slide active" data-slide="0">
+            <img src="/public/images/immobilier.jpg" alt="Immobilier" class="hero-slide-image" loading="eager" onerror="this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80';">
+            <div class="hero-slide-overlay"></div>
+          </div>
+          <!-- Image 2: Construction -->
+          <div class="hero-slide" data-slide="1">
+            <img src="/public/images/construction.jpg" alt="Construction" class="hero-slide-image" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80';">
+            <div class="hero-slide-overlay"></div>
+          </div>
+          <!-- Image 3: Agronomie -->
+          <div class="hero-slide" data-slide="2">
+            <img src="/public/images/agronomie.jpg" alt="Agronomie" class="hero-slide-image" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1920&q=80';">
+            <div class="hero-slide-overlay"></div>
+          </div>
+          <!-- Image 4: Import/Export -->
+          <div class="hero-slide" data-slide="3">
+            <img src="/public/images/import-export.jpg" alt="Import Export" class="hero-slide-image" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80';">
+            <div class="hero-slide-overlay"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Indicateurs du slider (dots) -->
+      <div class="hero-slider-indicators">
+        <button class="hero-slider-dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="hero-slider-dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="hero-slider-dot" data-slide="2" aria-label="Slide 3"></button>
+        <button class="hero-slider-dot" data-slide="3" aria-label="Slide 4"></button>
+      </div>
+      
+      <!-- Contenu texte au-dessus du slider -->
+      <div class="hero-content">
+        <div class="hero-text-wrapper">
+          <h1 class="hero-title" data-translate="home.heroTitle" data-animate-type="fade-up" data-animate-delay="0">
+            Élever vos projets vers l'excellence
+          </h1>
+          <p class="hero-subtitle" data-translate="home.heroSubtitle" data-animate-type="fade-up" data-animate-delay="200">
+            Votre partenaire de confiance pour l'excellence dans l'immobilier, la construction, l'agronomie et l'import/export
+          </p>
+          <div class="hero-cta" data-animate-type="fade-up" data-animate-delay="400">
+            <a href="/services.html" class="btn btn-primary btn-lg hero-btn" data-translate="home.heroButton">
+              Découvrir nos services
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Indicateur de scroll -->
+      <div class="hero-scroll-indicator" data-animate-type="fade-in" data-animate-delay="600">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Section Présentation / Valeur Ajoutée - Style cunsa.net -->
+    <section class="section section-presentation" id="value-proposition">
+      <div class="container">
+        <div class="section-header" data-animate-type="fade-up">
+          <h2 class="section-title-main">
+            Excellence & Expertise
+          </h2>
+          <p class="section-subtitle">
+            Une approche intégrée et professionnelle pour répondre à tous vos besoins
+          </p>
+        </div>
+        <div class="grid grid-2 value-cards">
+          <div class="card value-card" data-animate-type="fade-up" data-animate-delay="100">
+            <div class="value-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3>Expertise Multisectorielle</h3>
+            <p>
+              Une approche intégrée couvrant l'immobilier, la construction, l'agronomie et l'import-export pour répondre à tous vos besoins.
+            </p>
+          </div>
+          <div class="card value-card" data-animate-type="fade-up" data-animate-delay="200">
+            <div class="value-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3>Engagement Qualité</h3>
+            <p>
+              Des standards internationaux appliqués à chaque projet pour garantir l'excellence et la satisfaction client.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section Premium - Style cunsa.net -->
+    <section class="section section-light section-services section-services-premium" id="services">
+      <div class="container">
+        <div class="section-header" data-animate-type="fade-up">
+          <h2 class="section-title-main" data-translate="home.servicesTitle">
+            Nos Services
+          </h2>
+          <p class="section-subtitle" data-translate="home.servicesDescription">
+            Nous offrons une gamme complète de services sur mesure, conçus pour répondre à vos besoins professionnels les plus exigeants.
+          </p>
+        </div>
+        
+        <div class="services-layout-crossed">
+          <!-- Service 1: Immobilier - Texte gauche / Image droite -->
+          <div class="service-item-crossed" data-animate-type="fade-up" data-animate-delay="100">
+            <div class="service-item-content" data-animate-type="slide-left" data-animate-delay="100">
+              <div class="service-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  <path d="M8 12h8"></path>
+                </svg>
+              </div>
+              <h3 class="service-item-title" data-translate="services.realEstate">Immobilier</h3>
+              <p class="service-item-desc" data-translate="services.realEstateDescShort">Achat, vente, gestion immobilière.</p>
+              <a href="/immobilier.html" class="service-item-link" data-translate="buttons.learn_more">En savoir plus →</a>
+            </div>
+            <div class="service-item-image" data-animate-type="slide-right" data-animate-delay="150">
+              <img src="/public/images/immobilier.jpg" alt="Immobilier" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80';">
+            </div>
+          </div>
+          
+          <!-- Service 2: Construction - Image gauche / Texte droite -->
+          <div class="service-item-crossed service-item-reverse" data-animate-type="fade-up" data-animate-delay="200">
+            <div class="service-item-content" data-animate-type="slide-right" data-animate-delay="200">
+              <div class="service-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="service-item-title" data-translate="services.construction">Construction</h3>
+              <p class="service-item-desc" data-translate="services.constructionDescShort">Chantiers clés en main, qualité garantie.</p>
+              <a href="/construction.html" class="service-item-link" data-translate="buttons.learn_more">En savoir plus →</a>
+            </div>
+            <div class="service-item-image" data-animate-type="slide-left" data-animate-delay="250">
+              <img src="/public/images/construction.jpg" alt="Construction" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80';">
+            </div>
+          </div>
+          
+          <!-- Service 3: Agronomie - Texte gauche / Image droite -->
+          <div class="service-item-crossed" data-animate-type="fade-up" data-animate-delay="300">
+            <div class="service-item-content" data-animate-type="slide-left" data-animate-delay="300">
+              <div class="service-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="service-item-title" data-translate="services.agronomy">Agronomie</h3>
+              <p class="service-item-desc" data-translate="services.agronomyDescShort">Projets agricoles durables et innovants.</p>
+              <a href="/agronomie.html" class="service-item-link" data-translate="buttons.learn_more">En savoir plus →</a>
+            </div>
+            <div class="service-item-image" data-animate-type="slide-right" data-animate-delay="350">
+              <img src="/public/images/agronomie.jpg" alt="Agronomie" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&q=80';">
+            </div>
+          </div>
+          
+          <!-- Service 4: Import/Export - Image gauche / Texte droite -->
+          <div class="service-item-crossed service-item-reverse" data-animate-type="fade-up" data-animate-delay="400">
+            <div class="service-item-content" data-animate-type="slide-right" data-animate-delay="400">
+              <div class="service-item-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                  <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                  <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="service-item-title" data-translate="services.importExport">Import / Export</h3>
+              <p class="service-item-desc" data-translate="services.importExportDescShort">Échanges internationaux sécurisés et fiables.</p>
+              <a href="/import-export.html" class="service-item-link" data-translate="buttons.learn_more">En savoir plus →</a>
+            </div>
+            <div class="service-item-image" data-animate-type="slide-left" data-animate-delay="450">
+              <img src="/public/images/import-export.jpg" alt="Import Export" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80';">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Projets / Réalisations - Style cunsa.net -->
+    <section class="section section-projects" id="projects-preview">
+      <div class="container">
+        <div class="section-header" data-animate-type="fade-up">
+          <h2 class="section-title-main" data-translate="projects.title">
+            Nos Projets
+          </h2>
+          <p class="section-subtitle" data-translate="projects.subtitle">
+            Découvrez les domaines dans lesquels nous intervenons.
+          </p>
+        </div>
+        <div class="grid grid-2 projects-grid">
+          <div class="card project-card" data-animate-type="fade-up" data-animate-delay="100">
+            <div class="project-card-image">
+              <img src="/public/images/immobilier.jpg" alt="Projet Immobilier" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80';">
+            </div>
+            <div class="project-card-content">
+              <h3 data-translate="projects.realEstate.title">Projet Immobilier</h3>
+              <p data-translate="projects.realEstate.description">
+                Projets immobiliers axés sur la qualité, la durabilité et la valeur à long terme.
+              </p>
+              <a href="/projects.html" class="btn btn-secondary" data-translate="buttons.learn_more">En savoir plus →</a>
+            </div>
+          </div>
+          <div class="card project-card" data-animate-type="fade-up" data-animate-delay="200">
+            <div class="project-card-image">
+              <img src="/public/images/construction.jpg" alt="Projet Construction" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80';">
+            </div>
+            <div class="project-card-content">
+              <h3 data-translate="projects.construction.title">Projet Construction</h3>
+              <p data-translate="projects.construction.description">
+                Réalisations de construction respectant les normes, les délais et les exigences techniques.
+              </p>
+              <a href="/projects.html" class="btn btn-secondary" data-translate="buttons.learn_more">En savoir plus →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section À propos - Style cunsa.net -->
+    <section class="section section-light section-about" id="about">
+      <div class="container">
+        <div class="section-header" data-animate-type="fade-up">
+          <h2 class="section-title-main" data-translate="home.aboutTitle">
+            À propos de nous
+          </h2>
+          <p class="section-subtitle" data-translate="home.aboutDescription">
+            Altea Group est une entreprise innovante qui accompagne ses clients avec expertise dans divers secteurs stratégiques.
+          </p>
+        </div>
+        <div class="text-center about-cta" data-animate-type="fade-up" data-animate-delay="200">
+          <a href="/about.html" class="btn btn-primary btn-lg" data-translate="buttons.learn_more">En savoir plus →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact CTA - Style cunsa.net -->
+    <section class="section section-cta" id="contact">
+      <div class="container">
+        <div class="cta-content">
+          <div class="section-header cta-header" data-animate-type="fade-up">
+            <h2 class="section-title-main cta-title" data-translate="home.contactTitle">
+              Contactez-nous
+            </h2>
+            <p class="section-subtitle cta-subtitle" data-translate="home.contactDescription">
+              Vous avez un projet ambitieux ? Discutons-en ensemble pour le concrétiser.
+            </p>
+          </div>
+          <div class="text-center cta-button-wrapper" data-animate-type="fade-up" data-animate-delay="200">
+            <a href="/contact.html" class="btn btn-lg cta-button" data-translate="buttons.contact_us">
+              Contactez-nous
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3 data-translate="site.companyName">Altea Group</h3>
+        <p data-translate="footer.description">Altea Group est un groupe pluridisciplinaire actif dans la construction, l'immobilier, l'agronomie et l'import-export.</p>
+      </div>
+      
+      <div class="footer-column">
+        <h3 data-translate="footer.quickLinks">Liens rapides</h3>
+        <ul class="footer-links">
+          <li><a href="/about.html" data-translate="footer.about">À propos</a></li>
+          <li><a href="/services.html" data-translate="footer.services">Services</a></li>
+          <li><a href="/contact.html" data-translate="footer.contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3 data-translate="footer.followUs">Suivez-nous</h3>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook" data-translate-title="social.facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter" data-translate-title="social.twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn" data-translate-title="social.linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="mailto:contact@alteagroup.com" class="social-link" aria-label="Email" data-translate-title="social.email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> <span data-translate="site.companyName">Altea Group</span>. <span data-translate="footer.rights">Tous droits réservés</span>.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" aria-label="Back to top" data-translate-title="footer.backToTop">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="/js/translations.js"></script>
+  <script src="/js/app.js"></script>
+  <script>
+    // Mettre à jour l'année dans le footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Gérer le thème toggle mobile
+    const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+    if (themeToggleMobile) {
+      themeToggleMobile.addEventListener('click', () => {
+        document.getElementById('theme-toggle').click();
+      });
+    }
+    
+    // Scroll smooth vers la section suivante depuis l'indicateur hero
+    const heroScrollIndicator = document.querySelector('.hero-scroll-indicator');
+    if (heroScrollIndicator) {
+      heroScrollIndicator.addEventListener('click', () => {
+        const nextSection = document.querySelector('#value-proposition');
+        if (nextSection) {
+          const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+          const targetPosition = nextSection.offsetTop - headerHeight;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

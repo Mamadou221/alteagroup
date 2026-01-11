@@ -1,1 +1,0 @@
-export const metadata = { title: "Projects — Altea Group", description: "Projects and portfolio" }; export default function Head(){return <></>}

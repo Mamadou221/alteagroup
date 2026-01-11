@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projet Agronomie Altea Group - Projets agricoles durables intégrant innovation, performance et respect de l'environnement.">
+  <title>Projet Agronomie - Altea Group</title>
+  <link rel="icon" type="image/png" href="/public/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo" data-translate="site.companyName">Altea Group</a>
+      <ul class="nav-links">
+        <li><a href="/" data-translate="navbar.home">Accueil</a></li>
+        <li><a href="/services.html" data-translate="navbar.services">Services</a></li>
+        <li><a href="/projects.html" data-translate="navbar.projects">Projets</a></li>
+        <li><a href="/about.html" data-translate="navbar.about">À propos</a></li>
+        <li><a href="/contact.html" data-translate="navbar.contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+          <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" data-translate-title="theme.toggleTheme">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+      </div>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Menu" aria-expanded="false" data-translate-title="navbar.menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-content">
+        <ul class="mobile-menu-links">
+          <li><a href="/" data-translate="navbar.home">Accueil</a></li>
+          <li><a href="/services.html" data-translate="navbar.services">Services</a></li>
+          <li><a href="/projects.html" data-translate="navbar.projects">Projets</a></li>
+          <li><a href="/about.html" data-translate="navbar.about">À propos</a></li>
+          <li><a href="/contact.html" data-translate="navbar.contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-actions">
+          <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+          </div>
+          <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="mt-main">
+    <section class="hero-with-image" style="min-height: 60vh;">
+      <img src="/public/images/agronomie.jpg" alt="Projet Agronomie" class="hero-bg-image" onerror="this.style.display='none';">
+      <div class="hero-content">
+        <h1 data-translate="projectPages.agronomy.title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: var(--spacing-md);">Projet Agronomie</h1>
+        <p data-translate="projectPages.agronomy.subtitle" style="font-size: clamp(1.125rem, 2vw, 1.5rem); max-width: 800px; margin: 0 auto;">
+          Projets agricoles durables intégrant innovation, performance et respect de l'environnement.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title" data-animate>
+          <h2 data-translate="projectPages.agronomy.presentationTitle" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: var(--spacing-md);">Notre Vision Agronomique</h2>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto;">
+          <p data-translate="projectPages.agronomy.presentationText" style="font-size: var(--font-size-lg); line-height: 1.8; color: var(--color-text-secondary); margin-bottom: var(--spacing-xl); text-align: center;">
+            Nous développons des projets agricoles durables qui combinent innovation technique, performance économique et préservation de l'environnement. Notre approche favorise l'autonomie alimentaire et le développement rural.
+          </p>
+          <div class="grid-3-centered" style="margin-bottom: var(--spacing-3xl);">
+            <div class="card text-center" data-animate>
+              <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md);">
+                <span style="color: white; font-size: var(--font-size-xl); font-weight: bold;">✓</span>
+              </div>
+              <p data-translate="projectPages.agronomy.highlights.0" style="font-weight: 500; color: var(--color-text-primary);">Innovation agricole</p>
+            </div>
+            <div class="card text-center" data-animate>
+              <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md);">
+                <span style="color: white; font-size: var(--font-size-xl); font-weight: bold;">✓</span>
+              </div>
+              <p data-translate="projectPages.agronomy.highlights.1" style="font-weight: 500; color: var(--color-text-primary);">Performance durable</p>
+            </div>
+            <div class="card text-center" data-animate>
+              <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--spacing-md);">
+                <span style="color: white; font-size: var(--font-size-xl); font-weight: bold;">✓</span>
+              </div>
+              <p data-translate="projectPages.agronomy.highlights.2" style="font-weight: 500; color: var(--color-text-primary);">Respect de l'environnement</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-title" data-animate>
+          <h2 data-translate="projectPages.agronomy.statusTitle" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: var(--spacing-md);">État des Projets</h2>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto var(--spacing-3xl);">
+          <div class="card" style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(30, 64, 175, 0.05)); border: 2px solid var(--color-primary); text-align: center; padding: var(--spacing-2xl);" data-animate>
+            <div style="display: inline-flex; align-items: center; gap: var(--spacing-sm); margin-bottom: var(--spacing-md);">
+              <div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; animation: pulse 2s infinite;"></div>
+              <h3 data-translate="projectPages.agronomy.statusText" style="font-size: var(--font-size-xl); color: var(--color-primary); font-weight: 600;">Projets en cours de préparation</h3>
+            </div>
+            <p data-translate="projectPages.agronomy.statusDescription" style="color: var(--color-text-secondary); line-height: 1.8;">
+              Nous structurons actuellement des projets agricoles innovants et durables. Ces initiatives contribueront au développement agricole local et seront dévoilées prochainement.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-title" data-animate>
+          <h2 data-translate="projectPages.agronomy.methodologyTitle" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: var(--spacing-md);">Méthodologie & Engagement</h2>
+        </div>
+        <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--spacing-lg);">
+          <div class="card" data-animate>
+            <h3 data-translate="projectPages.agronomy.methodology.0.title" style="font-size: var(--font-size-xl); color: var(--color-primary); margin-bottom: var(--spacing-sm); font-weight: 600;">Innovation & Performance</h3>
+            <p data-translate="projectPages.agronomy.methodology.0.text" style="color: var(--color-text-secondary); line-height: 1.8;">
+              Nous intégrons les dernières innovations agronomiques pour optimiser les rendements tout en préservant les ressources naturelles et la biodiversité.
+            </p>
+          </div>
+          <div class="card" data-animate>
+            <h3 data-translate="projectPages.agronomy.methodology.1.title" style="font-size: var(--font-size-xl); color: var(--color-primary); margin-bottom: var(--spacing-sm); font-weight: 600;">Durabilité</h3>
+            <p data-translate="projectPages.agronomy.methodology.1.text" style="color: var(--color-text-secondary); line-height: 1.8;">
+              Chaque projet est conçu pour être économiquement viable, socialement bénéfique et écologiquement responsable sur le long terme.
+            </p>
+          </div>
+          <div class="card" data-animate>
+            <h3 data-translate="projectPages.agronomy.methodology.2.title" style="font-size: var(--font-size-xl); color: var(--color-primary); margin-bottom: var(--spacing-sm); font-weight: 600;">Accompagnement Complet</h3>
+            <p data-translate="projectPages.agronomy.methodology.2.text" style="color: var(--color-text-secondary); line-height: 1.8;">
+              Nous accompagnons nos partenaires de la conception à la commercialisation, en apportant expertise technique et conseil stratégique.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-title" style="margin-top: var(--spacing-3xl);" data-animate>
+          <h2 data-translate="projectPages.agronomy.ctaTitle" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: var(--spacing-md);">Un projet agricole à développer ?</h2>
+          <p data-translate="projectPages.agronomy.ctaText" style="font-size: var(--font-size-lg); max-width: 700px; margin: 0 auto var(--spacing-xl); color: var(--color-text-secondary); line-height: 1.8;">
+            Échangeons sur vos ambitions agricoles. Notre équipe vous propose des solutions durables et performantes adaptées à vos besoins.
+          </p>
+          <a href="/contact.html" class="btn btn-primary btn-lg" data-translate="projectPages.agronomy.ctaButton">Nous contacter</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3 data-translate="site.companyName">Altea Group</h3>
+        <p data-translate="footer.description">Altea Group est un groupe pluridisciplinaire actif dans la construction, l'immobilier, l'agronomie et l'import-export.</p>
+      </div>
+      <div class="footer-column">
+        <h3 data-translate="footer.quickLinks">Liens rapides</h3>
+        <ul class="footer-links">
+          <li><a href="/about.html" data-translate="footer.about">À propos</a></li>
+          <li><a href="/services.html" data-translate="footer.services">Services</a></li>
+          <li><a href="/contact.html" data-translate="footer.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 data-translate="footer.followUs">Suivez-nous</h3>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook" data-translate-title="social.facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter" data-translate-title="social.twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn" data-translate-title="social.linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="mailto:contact@alteagroup.com" class="social-link" aria-label="Email" data-translate-title="social.email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> <span data-translate="site.companyName">Altea Group</span>. <span data-translate="footer.rights">Tous droits réservés</span>.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top" data-translate-title="footer.backToTop">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
+
+  <script src="/js/translations.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/common.js"></script>
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+  </style>
+</body>
+</html>
+
+
+
